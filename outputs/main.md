@@ -71,7 +71,7 @@ This repository is built and maintained using the [automatic maintainer](https:/
   Keywords: keyword 3.
 
 * **SWE-bench: Can Language Models Resolve Real-World GitHub Issues?** [[paper](http://arxiv.org/abs/2310.06770)] 2023-10  
-      Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan. ICLR 2024.
+      Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan. **ICLR 2024**.
 
   Keywords: keyword 3.
 

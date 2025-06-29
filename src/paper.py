@@ -64,7 +64,7 @@ class Paper():
         if self.venue == "":
             string += f"* **{self.title}** [[paper]({self.link})] {self.time[:7]}  \n      {', '.join(self.authors)}."
         else:
-            string += f"* **{self.title}** [[paper]({self.link})] {self.time[:7]}  \n      {', '.join(self.authors)}. {self.venue}."
+            string += f"* **{self.title}** [[paper]({self.link})] {self.time[:7]}  \n      {', '.join(self.authors)}. **{self.venue}**."
         if self.keywords != []:
             string += f"\n\n  Keywords: {', '.join(self.keywords)}."
         return string
