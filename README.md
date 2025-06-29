@@ -1,5 +1,7 @@
 # Awesome Paperlist Maintainer
 
+An automated maintenance tool for curated academic awesome paper lists on Github. Simply maintain a plain text file containing paper URLs. The system will automatically handle formatting, sectioning, ordering, etc.
+
 ### Setup
 Run `pip install -e .` first.
 
