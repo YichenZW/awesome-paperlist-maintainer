@@ -1,0 +1,226 @@
+[
+    {
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "link": "http://arxiv.org/abs/1701.06538",
+        "topic": "Architecture",
+        "authors": [
+            "Noam Shazeer",
+            "Azalia Mirhoseini",
+            "Krzysztof Maziarz",
+            "Andy Davis",
+            "Quoc Le",
+            "Geoffrey Hinton",
+            "Jeff Dean"
+        ],
+        "abstract": "",
+        "summary": "The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are significant algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.",
+        "time": "2017-01-23T18:10:00Z",
+        "year": "2017",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Sparse",
+            "Gating"
+        ]
+    },
+    {
+        "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+        "link": "http://arxiv.org/abs/2101.03961",
+        "topic": "Architecture",
+        "authors": [
+            "William Fedus",
+            "Barret Zoph",
+            "Noam Shazeer"
+        ],
+        "abstract": "",
+        "summary": "In deep learning, models typically reuse the same parameters for all inputs. Mixture of Experts (MoE) defies this and instead selects different parameters for each incoming example. The result is a sparsely-activated model -- with outrageous numbers of parameters -- but a constant computational cost. However, despite several notable successes of MoE, widespread adoption has been hindered by complexity, communication costs and training instability -- we address these with the Switch Transformer. We simplify the MoE routing algorithm and design intuitive improved models with reduced communication and computational costs. Our proposed training techniques help wrangle the instabilities and we show large sparse models may be trained, for the first time, with lower precision (bfloat16) formats. We design models based off T5-Base and T5-Large to obtain up to 7x increases in pre-training speed with the same computational resources. These improvements extend into multilingual settings where we measure gains over the mT5-Base version across all 101 languages. Finally, we advance the current scale of language models by pre-training up to trillion parameter models on the \"Colossal Clean Crawled Corpus\" and achieve a 4x speedup over the T5-XXL model.",
+        "time": "2021-01-11T16:11:52Z",
+        "year": "2021",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Scaling"
+        ]
+    },
+    {
+        "title": "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
+        "link": "http://arxiv.org/abs/2112.06905",
+        "topic": "Scaling",
+        "authors": [
+            "Nan Du",
+            "Yanping Huang",
+            "Andrew M. Dai",
+            "Simon Tong",
+            "Dmitry Lepikhin",
+            "Yuanzhong Xu",
+            "Maxim Krikun",
+            "Yanqi Zhou",
+            "Adams Wei Yu",
+            "Orhan Firat",
+            "Barret Zoph",
+            "Liam Fedus",
+            "Maarten Bosma",
+            "Zongwei Zhou",
+            "Tao Wang",
+            "Yu Emma Wang",
+            "Kellie Webster",
+            "Marie Pellat",
+            "Kevin Robinson",
+            "Kathleen Meier-Hellstern",
+            "Toju Duke",
+            "Lucas Dixon",
+            "Kun Zhang",
+            "Quoc V Le",
+            "Yonghui Wu",
+            "Zhifeng Chen",
+            "Claire Cui"
+        ],
+        "abstract": "",
+        "summary": "Scaling language models with more data, compute and parameters has driven significant progress in natural language processing. For example, thanks to scaling, GPT-3 was able to achieve strong results on in-context learning tasks. However, training these large dense models requires significant amounts of computing resources. In this paper, we propose and develop a family of language models named GLaM (Generalist Language Model), which uses a sparsely activated mixture-of-experts architecture to scale the model capacity while also incurring substantially less training cost compared to dense variants. The largest GLaM has 1.2 trillion parameters, which is approximately 7x larger than GPT-3. It consumes only 1/3 of the energy used to train GPT-3 and requires half of the computation flops for inference, while still achieving better overall zero-shot and one-shot performance across 29 NLP tasks.",
+        "time": "2021-12-13T18:58:19Z",
+        "year": "2021",
+        "tags": [],
+        "venue": "ICML 2022",
+        "keywords": [
+            "Efficient"
+        ]
+    },
+    {
+        "title": "Mixtral of Experts",
+        "link": "http://arxiv.org/abs/2401.04088",
+        "topic": "Open-Source",
+        "authors": [
+            "Albert Q. Jiang",
+            "Alexandre Sablayrolles",
+            "Antoine Roux",
+            "Arthur Mensch",
+            "Blanche Savary",
+            "Chris Bamford",
+            "Devendra Singh Chaplot",
+            "Diego de las Casas",
+            "Emma Bou Hanna",
+            "Florian Bressand",
+            "Gianna Lengyel",
+            "Guillaume Bour",
+            "Guillaume Lample",
+            "L\u00e9lio Renard Lavaud",
+            "Lucile Saulnier",
+            "Marie-Anne Lachaux",
+            "Pierre Stock",
+            "Sandeep Subramanian",
+            "Sophia Yang",
+            "Szymon Antoniak",
+            "Teven Le Scao",
+            "Th\u00e9ophile Gervet",
+            "Thibaut Lavril",
+            "Thomas Wang",
+            "Timoth\u00e9e Lacroix",
+            "William El Sayed"
+        ],
+        "abstract": "",
+        "summary": "We introduce Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model. Mixtral has the same architecture as Mistral 7B, with the difference that each layer is composed of 8 feedforward blocks (i.e. experts). For every token, at each layer, a router network selects two experts to process the current state and combine their outputs. Even though each token only sees two experts, the selected experts can be different at each timestep. As a result, each token has access to 47B parameters, but only uses 13B active parameters during inference. Mixtral was trained with a context size of 32k tokens and it outperforms or matches Llama 2 70B and GPT-3.5 across all evaluated benchmarks. In particular, Mixtral vastly outperforms Llama 2 70B on mathematics, code generation, and multilingual benchmarks. We also provide a model fine-tuned to follow instructions, Mixtral 8x7B - Instruct, that surpasses GPT-3.5 Turbo, Claude-2.1, Gemini Pro, and Llama 2 70B - chat model on human benchmarks. Both the base and instruct models are released under the Apache 2.0 license.",
+        "time": "2024-01-08T18:47:34Z",
+        "year": "2024",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Inference-Efficient"
+        ]
+    },
+    {
+        "title": "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+        "link": "http://arxiv.org/abs/2401.06066",
+        "topic": "Architecture",
+        "authors": [
+            "Damai Dai",
+            "Chengqi Deng",
+            "Chenggang Zhao",
+            "R. X. Xu",
+            "Huazuo Gao",
+            "Deli Chen",
+            "Jiashi Li",
+            "Wangding Zeng",
+            "Xingkai Yu",
+            "Y. Wu",
+            "Zhenda Xie",
+            "Y. K. Li",
+            "Panpan Huang",
+            "Fuli Luo",
+            "Chong Ruan",
+            "Zhifang Sui",
+            "Wenfeng Liang"
+        ],
+        "abstract": "",
+        "summary": "In the era of large language models, Mixture-of-Experts (MoE) is a promising architecture for managing computational costs when scaling up model parameters. However, conventional MoE architectures like GShard, which activate the top-$K$ out of $N$ experts, face challenges in ensuring expert specialization, i.e. each expert acquires non-overlapping and focused knowledge. In response, we propose the DeepSeekMoE architecture towards ultimate expert specialization. It involves two principal strategies: (1) finely segmenting the experts into $mN$ ones and activating $mK$ from them, allowing for a more flexible combination of activated experts; (2) isolating $K_s$ experts as shared ones, aiming at capturing common knowledge and mitigating redundancy in routed experts. Starting from a modest scale with 2B parameters, we demonstrate that DeepSeekMoE 2B achieves comparable performance with GShard 2.9B, which has 1.5 times the expert parameters and computation. In addition, DeepSeekMoE 2B nearly approaches the performance of its dense counterpart with the same number of total parameters, which set the upper bound of MoE models. Subsequently, we scale up DeepSeekMoE to 16B parameters and show that it achieves comparable performance with LLaMA2 7B, with only about 40% of computations. Further, our preliminary efforts to scale up DeepSeekMoE to 145B parameters consistently validate its substantial advantages over the GShard architecture, and show its performance comparable with DeepSeek 67B, using only 28.5% (maybe even 18.2%) of computations.",
+        "time": "2024-01-11T17:31:42Z",
+        "year": "2024",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Expert-Specialization"
+        ]
+    },
+    {
+        "title": "OLMoE: Open Mixture-of-Experts Language Models",
+        "link": "http://arxiv.org/abs/2409.02060",
+        "topic": "Open-Source",
+        "authors": [
+            "Niklas Muennighoff",
+            "Luca Soldaini",
+            "Dirk Groeneveld",
+            "Kyle Lo",
+            "Jacob Morrison",
+            "Sewon Min",
+            "Weijia Shi",
+            "Pete Walsh",
+            "Oyvind Tafjord",
+            "Nathan Lambert",
+            "Yuling Gu",
+            "Shane Arora",
+            "Akshita Bhagia",
+            "Dustin Schwenk",
+            "David Wadden",
+            "Alexander Wettig",
+            "Binyuan Hui",
+            "Tim Dettmers",
+            "Douwe Kiela",
+            "Ali Farhadi",
+            "Noah A. Smith",
+            "Pang Wei Koh",
+            "Amanpreet Singh",
+            "Hannaneh Hajishirzi"
+        ],
+        "abstract": "",
+        "summary": "We introduce OLMoE, a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). OLMoE-1B-7B has 7 billion (B) parameters but uses only 1B per input token. We pretrain it on 5 trillion tokens and further adapt it to create OLMoE-1B-7B-Instruct. Our models outperform all available models with similar active parameters, even surpassing larger ones like Llama2-13B-Chat and DeepSeekMoE-16B. We present various experiments on MoE training, analyze routing in our model showing high specialization, and open-source all aspects of our work: model weights, training data, code, and logs.",
+        "time": "2024-09-03T17:08:20Z",
+        "year": "2024",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Fully-Open"
+        ]
+    },
+    {
+        "title": "OpenMoE: An Early Effort on Open Mixture-of-Experts Language Models",
+        "link": "http://arxiv.org/abs/2402.01739",
+        "topic": "Open-Source",
+        "authors": [
+            "Fuzhao Xue",
+            "Zian Zheng",
+            "Yao Fu",
+            "Jinjie Ni",
+            "Zangwei Zheng",
+            "Wangchunshu Zhou",
+            "Yang You"
+        ],
+        "abstract": "",
+        "summary": "To help the open-source community have a better understanding of Mixture-of-Experts (MoE) based large language models (LLMs), we train and release OpenMoE, a series of fully open-sourced and reproducible decoder-only MoE LLMs, ranging from 650M to 34B parameters and trained on up to over 1T tokens. Our investigation confirms that MoE-based LLMs can offer a more favorable cost-effectiveness trade-off than dense LLMs, highlighting the potential effectiveness for future LLM development.\n  One more important contribution of this study is an in-depth analysis of the routing mechanisms within our OpenMoE models, leading to three significant findings: Context-Independent Specialization, Early Routing Learning, and Drop-towards-the-End. We discovered that routing decisions in MoE models are predominantly based on token IDs, with minimal context relevance. The token-to-expert assignments are determined early in the pre-training phase and remain largely unchanged. This imperfect routing can result in performance degradation, particularly in sequential tasks like multi-turn conversations, where tokens appearing later in a sequence are more likely to be dropped. Finally, we rethink our design based on the above-mentioned observations and analysis. To facilitate future MoE LLM development, we propose potential strategies for mitigating the issues we found and further improving off-the-shelf MoE LLM designs.",
+        "time": "2024-01-29T12:05:02Z",
+        "year": "2024",
+        "tags": [],
+        "venue": "",
+        "keywords": [
+            "Fully-Open"
+        ]
+    }
+]

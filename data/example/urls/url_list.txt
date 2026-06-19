@@ -1,0 +1,7 @@
+https://arxiv.org/abs/1701.06538, Arch, Sparse/Gating
+https://arxiv.org/abs/2101.03961, Arch, Scaling
+https://arxiv.org/abs/2112.06905, Scale, Efficient
+https://arxiv.org/abs/2401.04088, Open, Inference-Efficient
+https://arxiv.org/abs/2401.06066, Arch, Expert-Specialization
+https://arxiv.org/abs/2409.02060, Open, Fully-Open
+https://arxiv.org/abs/2402.01739, Open, Fully-Open

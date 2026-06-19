@@ -1,0 +1,59 @@
+[
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/1701.06538",
+        "topic": "Arch",
+        "keywords": [
+            "Sparse",
+            "Gating"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2101.03961",
+        "topic": "Arch",
+        "keywords": [
+            "Scaling"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2112.06905",
+        "topic": "Scale",
+        "keywords": [
+            "Efficient"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2401.04088",
+        "topic": "Open",
+        "keywords": [
+            "Inference-Efficient"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2401.06066",
+        "topic": "Arch",
+        "keywords": [
+            "Expert-Specialization"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2409.02060",
+        "topic": "Open",
+        "keywords": [
+            "Fully-Open"
+        ]
+    },
+    {
+        "title": "",
+        "link": "http://arxiv.org/abs/2402.01739",
+        "topic": "Open",
+        "keywords": [
+            "Fully-Open"
+        ]
+    }
+]
